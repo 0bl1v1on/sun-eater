@@ -45,6 +45,10 @@ public class RepeatingScrollerSpawner: MonoBehaviour
 	GameObject Spawn(int repeatPosition)
 	{
 		var pos = m_ObjectPrefab.transform.position;
-		return Instantiate(m_ObjectPrefab, new Vector3(m_RepeatingOffset * repeatPosition, pos.y, pos.z), m_ObjectPrefab.transform.rotation, transform);
+		var obj = Instantiate(m_ObjectPrefab, transform);
+		obj.transform.localPosition = new Vector3(m_RepeatingOffset * repeatPosition, 0f, 0f);
+		
+		return obj;
+
 	}
 }
