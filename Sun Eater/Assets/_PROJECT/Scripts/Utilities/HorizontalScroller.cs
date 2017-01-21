@@ -6,7 +6,7 @@ public class HorizontalScroller: MonoBehaviour
 	public float m_XLimit = -10;
 	public float m_Speed = 3f;
 
-	void Update()
+	protected virtual void Update()
 	{
 		var pos = transform.position;
 		pos.x -= Time.deltaTime * m_Speed;

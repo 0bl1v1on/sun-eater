@@ -34,5 +34,4 @@ public class ObstacleSpawner : MonoBehaviour
 			m_Timeout = 0f;
 		}
 	}
-
 }
