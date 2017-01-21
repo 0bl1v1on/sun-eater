@@ -9,7 +9,10 @@ public class ItemHorizontalScroller : HorizontalScroller
 	{
 		if (col.gameObject.layer == Layers.PLAYER)
 		{
-			Debug.LogFormat("The crocodile has eaten the obstacle {0}", name);
+			if (gameObject.layer == Layers.COLLECTABLE)
+			{
+				Destroy(gameObject);
+			}
 		}
 	}
 
