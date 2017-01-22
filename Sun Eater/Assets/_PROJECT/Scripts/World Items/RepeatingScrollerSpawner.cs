@@ -52,3 +52,6 @@ public class RepeatingScrollerSpawner: MonoBehaviour
 
 	}
 }
+
+//2.38 / 0
+//-6.55 / 0.28

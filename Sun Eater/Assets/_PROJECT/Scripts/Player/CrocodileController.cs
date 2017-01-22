@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using System;
 
 public class CrocodileController : MonoBehaviour 
 {
 	public static CrocodileController instance { get; private set; }
 	public int score { get; private set; }
+
+	public static event Action onDeath = delegate { };
 
 	void Awake()
 	{
@@ -25,7 +28,7 @@ public class CrocodileController : MonoBehaviour
 	void Killed()
 	{
 		Debug.Log("You have died!");
-
+		onDeath();
 		score = 0;
 	}
 
