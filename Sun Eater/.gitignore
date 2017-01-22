@@ -1,0 +1,79 @@
+# Git Ignore for Unity projects
+
+
+!P31RestKit.dll
+
+# Ignore Temp and Library folders
+[Tt]emp/*
+[Oo]bj/*
+[Ll]ibrary/*
+[Ll]ocalDocs/*
+
+[Ll]ibrary/cache
+[Ll]ibrary/metadata
+[Ll]ibrary/previews
+[Ll]ibrary/ScriptAssemblies
+[Ll]ibrary/assetDatabase3
+[Ll]ibrary/AssetServerCacheV3
+[Ll]ibrary/guidmapper
+[Ll]ibrary/expandedItems
+
+
+FailedAssetImports.txt
+ServerPreferences.plist
+
+#!Library/*.asset
+#!Library/AssetImportState
+#!Library/AssetVersioning.db
+#!Library/BuildPlayer.prefs
+#!Library/ScriptMapper
+#!Library/assetservercachev3
+#!Library/expandedItems
+#!Library/guidmapper
+#!Library/unity default resources
+#!Library/unity editor resources
+#!Library/metadata/
+
+# Ignore IDE projects
+*.csproj
+*.pidb
+*.sln
+*.userprefs
+*.unityproj
+
+# Ignore build folders
+[Bb]uilds/*
+
+# Ignore generated .dat files
+[Cc]haracters.dat
+[Pp]layerProfile.dat
+
+# Ignore Android builds
+*.apk
+
+# Ignore iOS builds
+*iOS/*
+
+# Ignore Mac OS X meta data
+.DS_Store
+
+# Ignore qcar unity.txt
+unity.txt
+QCAR/*
+
+# ignore builds
+*.app
+
+# ignore emacs bacup files
+\#*
+
+# ignore generated recording files
+*.arec
+*.crec
+*.grec
+*.arcrec
+[Ss]torage/*
+
+# Version stuff
+[Vv]ersion.txt
+[Nn]extVersion.txt
