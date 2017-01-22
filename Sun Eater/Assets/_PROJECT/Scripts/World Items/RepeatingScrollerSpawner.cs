@@ -24,7 +24,7 @@ public class RepeatingScrollerSpawner: MonoBehaviour
 		}
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
 		foreach (var obj in m_Objects)
 		{
